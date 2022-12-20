@@ -1,0 +1,5 @@
+requests
+boto3
+marshmallow
+pytz
+aws-lambda-powertools==1.29.1
