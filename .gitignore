@@ -13,11 +13,11 @@ parts/
 sdist/
 var/
 *.egg-info/
-*__pycache__
 .installed.cfg
 *.egg
 .venv
 venv
+*__pycache__
 
 # Serverless directories
 .serverless
