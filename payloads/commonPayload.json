@@ -1,0 +1,185 @@
+{
+    "categories": [
+        {
+            "category": "Pizzas",
+            "description": "Traditional Pizza",
+            "displayOrder": 2,
+            "productIds": [
+                "GroupIdHawaiianPizza"
+            ]
+        }
+    ],
+    "description": "Bob's classic menu",
+    "imageUri": "https://some.where.else/member/1653/4623.png",
+    "locationId": "UE_MIGRATION",
+    "partners": [
+        {
+            "metadata": {
+                "clientId": "abc1234",
+                "clientSecret": "1234abc",
+                "StoreId": "1234xyz"
+            },
+            "partner": "google_food"
+        },
+        {
+            "metadata": {
+                "locationId": "a1b2c3"
+            },
+            "partner": "doordash"
+        }
+    ],
+    "products": [
+        {
+            "availability": "available",
+            "bundledItems": [],
+            "customPosId": "GroupIdHawaiianPizza",
+            "description": "Tomato Base, Mozzarella, Ham, Pineapple",
+            "dietary": [],
+            "imageUri": "",
+            "includedItems": [
+                {
+                    "name": "Small Hawaiian Pizza",
+                    "options": [
+                        {
+                            "max": 1,
+                            "min": 0,
+                            "name": "Remove Current Toppings",
+                            "posId": "RemoveExtra01",
+                            "variants": [
+                                {
+                                    "name": "Tomato Base",
+                                    "posId": "ExtraTB01",
+                                    "price": 99
+                                },
+                                {
+                                    "name": "Pineapple",
+                                    "posId": "ExtraP02",
+                                    "price": 0
+                                },
+                                {
+                                    "name": "Ham",
+                                    "posId": "ExtraP03",
+                                    "price": 0
+                                }
+                            ]
+                        },
+                        {
+                            "max": 1,
+                            "min": 0,
+                            "name": "Extra Toppings",
+                            "posId": "ExtraToppings01",
+                            "variants": [
+                                {
+                                    "name": "Tomato Base",
+                                    "posId": "ExtraTB01",
+                                    "price": 0
+                                },
+                                {
+                                    "name": "Pineapple",
+                                    "posId": "ExtraP02",
+                                    "price": 0
+                                },
+                                {
+                                    "name": "Ham",
+                                    "posId": "ExtraP03",
+                                    "price": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "posId": "SmlHawaiianPizza01",
+                    "productIds": {
+                        "barcodes": [],
+                        "gtin-8": "",
+                        "gtin-12": "",
+                        "gtin-13": "",
+                        "gtin-14": "",
+                        "plu": "SmlHawaiianPizza01",
+                        "sku": ""
+                    },
+                    "quantity": 1,
+                    "unitPrice": 1000
+                },
+                {
+                    "name": "Large Hawaiian Pizza",
+                    "options": [
+                        {
+                            "max": 1,
+                            "min": 0,
+                            "name": "Remove Current Toppings",
+                            "posId": "RemoveExtra01",
+                            "variants": [
+                                {
+                                    "name": "Tomato Base",
+                                    "posId": "ExtraTB01",
+                                    "price": 99
+                                },
+                                {
+                                    "name": "Pineapple",
+                                    "posId": "ExtraP02",
+                                    "price": 0
+                                },
+                                {
+                                    "name": "Ham",
+                                    "posId": "ExtraP03",
+                                    "price": 0
+                                }
+                            ]
+                        },
+                        {
+                            "max": 1,
+                            "min": 0,
+                            "name": "Extra Toppings",
+                            "posId": "ExtraToppings0122",
+                            "variants": [
+                                {
+                                    "name": "Tomato Base",
+                                    "posId": "ExtraTB01",
+                                    "price": 123
+                                },
+                                {
+                                    "name": "Pineapple",
+                                    "posId": "ExtraP02",
+                                    "price": 0
+                                },
+                                {
+                                    "name": "Ham",
+                                    "posId": "ExtraP03",
+                                    "price": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "posId": "LrgHawaiianPizza01",
+                    "productIds": {
+                        "barcodes": [],
+                        "gtin-8": "",
+                        "gtin-12": "",
+                        "gtin-13": "",
+                        "gtin-14": "",
+                        "plu": "LrgHawaiianPizza01",
+                        "sku": ""
+                    },
+                    "quantity": 1,
+                    "unitPrice": 1000
+                }
+            ],
+            "menuDir": [],
+            "name": "Hawaiian Pizza",
+            "options": [],
+            "posId": "GroupIdHawaiianPizza",
+            "productIds": {
+                "barcodes": [],
+                "gtin-8": "",
+                "gtin-12": "",
+                "gtin-13": "",
+                "gtin-14": "",
+                "plu": "GroupIdHawaiianPizza",
+                "sku": ""
+            },
+            "tags": [],
+            "type": "bundle",
+            "unitPrice": 1200
+        }
+    ]
+}

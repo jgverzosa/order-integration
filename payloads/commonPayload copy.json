@@ -1,0 +1,187 @@
+{
+    "categories": [
+        {
+            "category": "Pizza Deals of the month",
+            "description": "Enjoy 1 Pizza + 1.25 L Soda drink",
+            "displayOrder": 1,
+            "productIds": [
+                "DEAL01"
+            ]
+        }
+    ],
+    "description": "Bob's classic menu",
+    "imageUri": "https://some.where.else/member/1653/4623.png",
+    "locationId": "UE_MIGRATION",
+    "partners": [
+        {
+            "metadata": {
+                "clientId": "abc1234",
+                "clientSecret": "1234abc",
+                "StoreId": "1234xyz"
+            },
+            "partner": "google_food"
+        },
+        {
+            "metadata": {
+                "locationId": "a1b2c3"
+            },
+            "partner": "doordash"
+        }
+    ],
+    "products": [
+        {
+            "availability": "available",
+            "bundledItems": [
+                {
+                    "includedItems": [
+                        {
+                            "name": "Large Hawaiian Pizza",
+                            "options": [
+                                {
+                                    "max": 1,
+                                    "min": 0,
+                                    "name": "Extra Toppings",
+                                    "posId": "Lp01ExtraToppings01",
+                                    "variants": [
+                                        {
+                                            "name": "Tomato Base",
+                                            "posId": "ExtraTB01",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "Pineapple",
+                                            "posId": "ExtraP02",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "Ham",
+                                            "posId": "ExtraP03",
+                                            "price": 0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "posId": "LrgHawaiianPizza01",
+                            "productIds": {
+                                "barcodes": [],
+                                "gtin-8": "",
+                                "gtin-12": "",
+                                "gtin-13": "",
+                                "gtin-14": "",
+                                "plu": "LrgHawaiianPizza01",
+                                "sku": ""
+                            },
+                            "quantity": 1,
+                            "unitPrice": 0
+                        },
+                        {
+                            "name": "Large Pepperoni Pizza",
+                            "options": [
+                                {
+                                    "max": 1,
+                                    "min": 0,
+                                    "name": "Extra Toppings",
+                                    "posId": "Lp02ExtraToppings01",
+                                    "variants": [
+                                        {
+                                            "name": "Tomato Base",
+                                            "posId": "ExtraTB01",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "Pineapple",
+                                            "posId": "ExtraP02",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "Ham",
+                                            "posId": "ExtraP03",
+                                            "price": 0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "posId": "LrgPepperoniPizza02",
+                            "productIds": {
+                                "barcodes": [],
+                                "gtin-8": "",
+                                "gtin-12": "",
+                                "gtin-13": "",
+                                "gtin-14": "",
+                                "plu": "LrgPepperoniPizza01",
+                                "sku": ""
+                            },
+                            "quantity": 1,
+                            "unitPrice": 0
+                        }
+                    ],
+                    "max": 1,
+                    "min": 1,
+                    "name": "Choose your pizza",
+                    "posId": "DealOption01"
+                },
+                {
+                    "includedItems": [
+                        {
+                            "name": "1.25 L Coke",
+                            "options": [],
+                            "posId": "DR10",
+                            "productIds": {
+                                "barcodes": [],
+                                "gtin-8": "",
+                                "gtin-12": "",
+                                "gtin-13": "",
+                                "gtin-14": "",
+                                "plu": "DR10",
+                                "sku": ""
+                            },
+                            "quantity": 1,
+                            "unitPrice": 0
+                        },
+                        {
+                            "name": "1.25 L Sprite",
+                            "options": [],
+                            "posId": "DR11",
+                            "productIds": {
+                                "barcodes": [],
+                                "gtin-8": "",
+                                "gtin-12": "",
+                                "gtin-13": "",
+                                "gtin-14": "",
+                                "plu": "DR11",
+                                "sku": ""
+                            },
+                            "quantity": 1,
+                            "unitPrice": 0
+                        }
+                    ],
+                    "max": 1,
+                    "min": 1,
+                    "name": "Choose your drink",
+                    "posId": "DealOption02"
+                }
+            ],
+            "customPosId": "DEAL01",
+            "description": "Any Large Pizza + 1.25 Drink",
+            "dietary": [],
+            "imageUri": "https://some.where.else/member/1653/4622.png",
+            "includedItems": [],
+            "menuDir": [],
+            "name": "Pizza Deal",
+            "options": [],
+            "posId": "DEAL01",
+            "productIds": {
+                "barcodes": [],
+                "gtin-8": "",
+                "gtin-12": "",
+                "gtin-13": "",
+                "gtin-14": "",
+                "plu": "DEAL01",
+                "sku": ""
+            },
+            "tags": [],
+            "type": "bundle",
+            "unitPrice": 1200
+        }
+    ]
+}

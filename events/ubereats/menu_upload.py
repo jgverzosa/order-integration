@@ -1,6 +1,5 @@
 import json
 from aws_lambda_powertools import Logger
-from aws_lambda_powertools.event_handler import Response, content_types
 from marshmallow import ValidationError
 
 from mapper.ubereats import UberEatsMapper
@@ -16,6 +15,7 @@ class Menu:
         uber_service = UberEatsService()
         uber_menu_schema = UberEatsMenuSchema()
         uber_payload = UberEatsMapper(app.current_event.json_body)
+        # s3
         logger.info(json.dumps(uber_payload.uber_eats_menu_format, indent=4))
         try:
             payload = uber_menu_schema.load(uber_payload.uber_eats_menu_format)

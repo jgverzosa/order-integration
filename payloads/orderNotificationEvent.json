@@ -1,0 +1,89 @@
+{
+    "resource": "/ubereats/order",
+    "path": "/ubereats/order",
+    "httpMethod": "POST",
+    "headers": {
+        "Accept-Encoding": "gzip",
+        "Content-Type": "application/json",
+        "Host": "stg.integration.deliverit.com.au",
+        "User-Agent": "Go-http-client/1.1",
+        "X-Amzn-Trace-Id": "Root=1-63c50585-249f27d60a2c71083ef68c8c",
+        "X-Api-Environment": "production",
+        "X-Environment": "production",
+        "X-Forwarded-For": "104.36.196.78",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https",
+        "X-Uber-Signature": "7041eb1d1aea5e359c7416786511dee607617332639126a6029226f8fdae913d"
+    },
+    "multiValueHeaders": {
+        "Accept-Encoding": [
+            "gzip"
+        ],
+        "Content-Type": [
+            "application/json"
+        ],
+        "Host": [
+            "stg.integration.deliverit.com.au"
+        ],
+        "User-Agent": [
+            "Go-http-client/1.1"
+        ],
+        "X-Amzn-Trace-Id": [
+            "Root=1-63c50585-249f27d60a2c71083ef68c8c"
+        ],
+        "X-Api-Environment": [
+            "production"
+        ],
+        "X-Environment": [
+            "production"
+        ],
+        "X-Forwarded-For": [
+            "104.36.196.78"
+        ],
+        "X-Forwarded-Port": [
+            "443"
+        ],
+        "X-Forwarded-Proto": [
+            "https"
+        ],
+        "X-Uber-Signature": [
+            "7041eb1d1aea5e359c7416786511dee607617332639126a6029226f8fdae913d"
+        ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+        "resourceId": "en8qg1",
+        "resourcePath": "/ubereats/order",
+        "httpMethod": "POST",
+        "extendedRequestId": "e03M1H1CywMF-pQ=",
+        "requestTime": "16/Jan/2023:08:06:29 +0000",
+        "path": "/ubereats/order",
+        "accountId": "450117740854",
+        "protocol": "HTTP/1.1",
+        "stage": "prod",
+        "domainPrefix": "stg",
+        "requestTimeEpoch": 1673856389155,
+        "requestId": "ca8407e5-1b09-4bb4-8331-c0abcf6b1d79",
+        "identity": {
+            "cognitoIdentityPoolId": null,
+            "accountId": null,
+            "cognitoIdentityId": null,
+            "caller": null,
+            "sourceIp": "104.36.196.78",
+            "principalOrgId": null,
+            "accessKey": null,
+            "cognitoAuthenticationType": null,
+            "cognitoAuthenticationProvider": null,
+            "userArn": null,
+            "userAgent": "Go-http-client/1.1",
+            "user": null
+        },
+        "domainName": "stg.integration.deliverit.com.au",
+        "apiId": "2ui22h4q64"
+    },
+    "body": "{\"event_id\":\"163efcb2-5fd3-50c8-a76a-9ef170d04af0\",\"event_time\":1673856388000,\"event_type\":\"orders.notification\",\"meta\":{\"resource_id\":\"9fcfb76b-bed5-41a9-ba52-c438e51ff719\",\"status\":\"pos\",\"user_id\":\"28a3bc70-0218-4d87-b962-8d3d9ebd4449\"},\"resource_href\":\"https://api.uber.com/v2/eats/order/9fcfb76b-bed5-41a9-ba52-c438e51ff719\",\"webhook_meta\":{\"client_id\":\"X_NVHKyKSO4zPFE83GSZJtrUCNdTwUKv\",\"webhook_config_id\":\"eats-restaurant-order-experience.order-webhooks\",\"webhook_msg_timestamp\":1673856388,\"webhook_msg_uuid\":\"68650a3d-338c-4f6d-a405-e8b77c677d69\"}}",
+    "isBase64Encoded": false
+}

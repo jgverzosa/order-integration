@@ -1,0 +1,482 @@
+{
+    "categories": [
+        {
+            "category": "Pizzas",
+            "description": "Traditional Pizza",
+            "displayOrder": 2,
+            "productIds": [
+                "GroupIdHawaiianPizza"
+            ]
+        },
+        {
+            "category": "Pizza Deals of the month",
+            "description": "Enjoy 1 Pizza + 1.25 L Soda drink",
+            "displayOrder": 1,
+            "productIds": [
+                "DEAL01"
+            ]
+        },
+        {
+            "category": "Pasta",
+            "description": "Homemade recipe",
+            "displayOrder": 3,
+            "productIds": [
+                "PST01"
+            ]
+        },
+        {
+            "category": "Drinks",
+            "description": "",
+            "displayOrder": 4,
+            "productIds": [
+                "DR01",
+                "DR02"
+            ]
+        }
+    ],
+    "description": "Bob's classic menu",
+    "imageUri": "https://some.where.else/member/1653/4623.png",
+    "locationId": "UE_MIGRATION",
+    "partners": [
+        {
+            "metadata": {
+                "clientId": "abc1234",
+                "clientSecret": "1234abc",
+                "StoreId": "1234xyz"
+            },
+            "partner": "google_food"
+        },
+        {
+            "metadata": {
+                "locationId": "a1b2c3"
+            },
+            "partner": "doordash"
+        }
+    ],
+    "products": [
+        {
+            "availability": "available",
+            "bundledItems": [
+                {
+                    "includedItems": [
+                        {
+                            "name": "Large Hawaiian Pizza",
+                            "options": [
+                                {
+                                    "max": 1,
+                                    "min": 0,
+                                    "name": "Extra Toppings",
+                                    "posId": "Lp01ExtraToppings01",
+                                    "variants": [
+                                        {
+                                            "name": "Tomato Base",
+                                            "posId": "ExtraTB01",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "Pineapple",
+                                            "posId": "ExtraP02",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "Ham",
+                                            "posId": "ExtraP03",
+                                            "price": 0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "posId": "LrgHawaiianPizza01",
+                            "productIds": {
+                                "barcodes": [],
+                                "gtin-8": "",
+                                "gtin-12": "",
+                                "gtin-13": "",
+                                "gtin-14": "",
+                                "plu": "LrgHawaiianPizza01",
+                                "sku": ""
+                            },
+                            "quantity": 1,
+                            "unitPrice": 0
+                        },
+                        {
+                            "name": "Large Pepperoni Pizza",
+                            "options": [
+                                {
+                                    "max": 1,
+                                    "min": 0,
+                                    "name": "Extra Toppings",
+                                    "posId": "Lp02ExtraToppings01",
+                                    "variants": [
+                                        {
+                                            "name": "Tomato Base",
+                                            "posId": "ExtraTB01",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "Pineapple",
+                                            "posId": "ExtraP02",
+                                            "price": 0
+                                        },
+                                        {
+                                            "name": "Ham",
+                                            "posId": "ExtraP03",
+                                            "price": 0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "posId": "LrgPepperoniPizza02",
+                            "productIds": {
+                                "barcodes": [],
+                                "gtin-8": "",
+                                "gtin-12": "",
+                                "gtin-13": "",
+                                "gtin-14": "",
+                                "plu": "LrgPepperoniPizza01",
+                                "sku": ""
+                            },
+                            "quantity": 1,
+                            "unitPrice": 0
+                        }
+                    ],
+                    "max": 1,
+                    "min": 1,
+                    "name": "Choose your pizza",
+                    "posId": "DealOption01"
+                },
+                {
+                    "includedItems": [
+                        {
+                            "name": "1.25 L Coke",
+                            "options": [],
+                            "posId": "DR10",
+                            "productIds": {
+                                "barcodes": [],
+                                "gtin-8": "",
+                                "gtin-12": "",
+                                "gtin-13": "",
+                                "gtin-14": "",
+                                "plu": "DR10",
+                                "sku": ""
+                            },
+                            "quantity": 1,
+                            "unitPrice": 0
+                        },
+                        {
+                            "name": "1.25 L Sprite",
+                            "options": [],
+                            "posId": "DR11",
+                            "productIds": {
+                                "barcodes": [],
+                                "gtin-8": "",
+                                "gtin-12": "",
+                                "gtin-13": "",
+                                "gtin-14": "",
+                                "plu": "DR11",
+                                "sku": ""
+                            },
+                            "quantity": 1,
+                            "unitPrice": 0
+                        }
+                    ],
+                    "max": 1,
+                    "min": 1,
+                    "name": "Choose your drink",
+                    "posId": "DealOption02"
+                }
+            ],
+            "customPosId": "DEAL01",
+            "description": "Any Large Pizza + 1.25 Drink",
+            "dietary": [],
+            "imageUri": "https://some.where.else/member/1653/4622.png",
+            "includedItems": [],
+            "menuDir": [],
+            "name": "Pizza Deal",
+            "options": [],
+            "posId": "DEAL01",
+            "productIds": {
+                "barcodes": [],
+                "gtin-8": "",
+                "gtin-12": "",
+                "gtin-13": "",
+                "gtin-14": "",
+                "plu": "DEAL01",
+                "sku": ""
+            },
+            "tags": [],
+            "type": "bundle",
+            "unitPrice": 1200
+        },
+        {
+            "availability": "available",
+            "bundledItems": [],
+            "customPosId": "GroupIdHawaiianPizza",
+            "description": "Tomato Base, Mozzarella, Ham, Pineapple",
+            "dietary": [],
+            "imageUri": "https://some.where.else/member/1653/4622.png",
+            "includedItems": [
+                {
+                    "name": "Small Hawaiian Pizza",
+                    "options": [
+                        {
+                            "max": 1,
+                            "min": 0,
+                            "name": "Remove Current Toppings",
+                            "posId": "RemoveExtra01",
+                            "variants": [
+                                {
+                                    "name": "Tomato Base",
+                                    "posId": "ExtraTB01",
+                                    "price": 99
+                                },
+                                {
+                                    "name": "Pineapple",
+                                    "posId": "ExtraP02",
+                                    "price": 0
+                                },
+                                {
+                                    "name": "Ham",
+                                    "posId": "ExtraP03",
+                                    "price": 0
+                                }
+                            ]
+                        },
+                        {
+                            "max": 1,
+                            "min": 0,
+                            "name": "Extra Toppings",
+                            "posId": "ExtraToppings01",
+                            "variants": [
+                                {
+                                    "name": "Tomato Base",
+                                    "posId": "ExtraTB01",
+                                    "price": 0
+                                },
+                                {
+                                    "name": "Pineapple",
+                                    "posId": "ExtraP02",
+                                    "price": 0
+                                },
+                                {
+                                    "name": "Ham",
+                                    "posId": "ExtraP03",
+                                    "price": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "posId": "SmlHawaiianPizza01",
+                    "productIds": {
+                        "barcodes": [],
+                        "gtin-8": "",
+                        "gtin-12": "",
+                        "gtin-13": "",
+                        "gtin-14": "",
+                        "plu": "SmlHawaiianPizza01",
+                        "sku": ""
+                    },
+                    "quantity": 1,
+                    "unitPrice": 1000
+                },
+                {
+                    "name": "Large Hawaiian Pizza",
+                    "options": [
+                        {
+                            "max": 1,
+                            "min": 0,
+                            "name": "Remove Current Toppings",
+                            "posId": "RemoveExtra01",
+                            "variants": [
+                                {
+                                    "name": "Tomato Base",
+                                    "posId": "ExtraTB01",
+                                    "price": 99
+                                },
+                                {
+                                    "name": "Pineapple",
+                                    "posId": "ExtraP02",
+                                    "price": 0
+                                },
+                                {
+                                    "name": "Ham",
+                                    "posId": "ExtraP03",
+                                    "price": 0
+                                }
+                            ]
+                        },
+                        {
+                            "max": 1,
+                            "min": 0,
+                            "name": "Extra Toppings",
+                            "posId": "ExtraToppings0122",
+                            "variants": [
+                                {
+                                    "name": "Tomato Base",
+                                    "posId": "ExtraTB01",
+                                    "price": 123
+                                },
+                                {
+                                    "name": "Pineapple",
+                                    "posId": "ExtraP02",
+                                    "price": 0
+                                },
+                                {
+                                    "name": "Ham",
+                                    "posId": "ExtraP03",
+                                    "price": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "posId": "LrgHawaiianPizza01",
+                    "productIds": {
+                        "barcodes": [],
+                        "gtin-8": "",
+                        "gtin-12": "",
+                        "gtin-13": "",
+                        "gtin-14": "",
+                        "plu": "LrgHawaiianPizza01",
+                        "sku": ""
+                    },
+                    "quantity": 1,
+                    "unitPrice": 1000
+                }
+            ],
+            "menuDir": [],
+            "name": "Hawaiian Pizza",
+            "options": [],
+            "posId": "GroupIdHawaiianPizza",
+            "productIds": {
+                "barcodes": [],
+                "gtin-8": "",
+                "gtin-12": "",
+                "gtin-13": "",
+                "gtin-14": "",
+                "plu": "GroupIdHawaiianPizza",
+                "sku": ""
+            },
+            "tags": [],
+            "type": "bundle",
+            "unitPrice": 1200
+        },
+        {
+            "availability": "available",
+            "bundledItems": [],
+            "customPosId": "PST01",
+            "description": "Homemade meaty beef in a rich tomato sauce.",
+            "dietary": [],
+            "imageUri": "https://some.where.else/member/1653/4622.png",
+            "includedItems": [],
+            "menuDir": [],
+            "name": "Bolognese Pasta",
+            "options": [
+                {
+                    "customPosId": "GroupOption01",
+                    "max": 1,
+                    "min": 0,
+                    "name": "Pasta Noodle",
+                    "posId": "GroupOption01",
+                    "variants": [
+                        {
+                            "customPosId": "Option01",
+                            "name": "Fettuccine",
+                            "posId": "Option01",
+                            "price": 0
+                        },
+                        {
+                            "customPosId": "Option02",
+                            "name": "Penne",
+                            "posId": "Option02",
+                            "price": 0
+                        }
+                    ]
+                },
+                {
+                    "customPosId": "GroupOption02",
+                    "max": 1,
+                    "min": 0,
+                    "name": "Sauce",
+                    "posId": "GroupOption02",
+                    "variants": [
+                        {
+                            "customPosId": "SauceGroupOption01",
+                            "name": "Fettuccine",
+                            "posId": "SauceGroupOption01",
+                            "price": 33
+                        },
+                        {
+                            "customPosId": "SauceGroupOption02",
+                            "name": "Penne",
+                            "posId": "SauceGroupOption02",
+                            "price": 212
+                        }
+                    ]
+                }
+            ],
+            "posId": "PST01",
+            "productIds": {
+                "barcodes": [],
+                "gtin-8": "",
+                "gtin-12": "",
+                "gtin-13": "",
+                "gtin-14": "",
+                "plu": "PST01",
+                "sku": ""
+            },
+            "tags": [],
+            "type": "single",
+            "unitPrice": 1895
+        },
+        {
+            "availability": "available",
+            "bundledItems": [],
+            "customPosId": "DR01",
+            "description": "",
+            "dietary": [],
+            "imageUri": "https://some.where.else/member/1653/4622.png",
+            "includedItems": [],
+            "menuDir": [],
+            "name": "Can Coke Zero",
+            "options": [],
+            "posId": "DR01",
+            "productIds": {
+                "barcodes": [],
+                "gtin-8": "",
+                "gtin-12": "",
+                "gtin-13": "",
+                "gtin-14": "",
+                "plu": "DR01",
+                "sku": ""
+            },
+            "tags": [],
+            "type": "single",
+            "unitPrice": 250
+        },
+        {
+            "availability": "available",
+            "bundledItems": [],
+            "customPosId": "DR02",
+            "description": "",
+            "dietary": [],
+            "imageUri": "https://some.where.else/member/1653/4622.png",
+            "includedItems": [],
+            "menuDir": [],
+            "name": "Can Fanta",
+            "options": [],
+            "posId": "DR02",
+            "productIds": {
+                "barcodes": [],
+                "gtin-8": "",
+                "gtin-12": "",
+                "gtin-13": "",
+                "gtin-14": "",
+                "plu": "DR02",
+                "sku": ""
+            },
+            "tags": [],
+            "type": "single",
+            "unitPrice": 250
+        }
+    ]
+}

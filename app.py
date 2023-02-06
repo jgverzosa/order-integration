@@ -7,6 +7,7 @@ from marshmallow import ValidationError
 
 from events.ubereats.menu_upload import Menu as UberEatsMenu
 from entities.common_menu import CommonMenuSchema
+from events.ubereats.order import Order
 
 logger = Logger(service="MenuFeed")
 app = ApiGatewayResolver()
@@ -31,7 +32,27 @@ def menu_upload():
                     body=error.messages_dict
                 )
 
+
+@app.post("/ubereats/order")
+def order():
+    app.current_event.json_body
+    Order(app)
+    # try:
+    #     common_menu.load(app.current_event.json_body)
+    #     uber_eats = UberEatsMenu(app)
+    return Response(
+                status_code=200,
+                content_type=content_types.APPLICATION_JSON,
+                body=json.dumps({"message": "success"})
+            )
+    # except ValidationError as error:
+    #     return Response(
+    #                 status_code=400,
+    #                 content_type=content_types.APPLICATION_JSON,
+    #                 body=error.messages_dict
+    #             )
+
+
 # @logger.inject_lambda_context(log_event=True)
 def handler(event: dict, context: LambdaContext) -> dict:
     return app.resolve(event, context)
-

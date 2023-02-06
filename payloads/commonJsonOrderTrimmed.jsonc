@@ -1,0 +1,131 @@
+
+{
+  "id": "1634", // uuid ✅🏛️
+  "externalOrderRef": "AQN-1234",
+  "deliveryOrderId": "XGH-4528-JTW",
+  "locationId": "Xuy8K3a0", // integration id ✅🏛️ 🚩store.id=91b969ea-2e4d-46ac-b727-3a7528e5306b
+  "status": "accepted", // ✅ 🚩current_state=CANCELED
+  "type": "pickup", // ✅
+  "notes": "Deliver to back door", // order notes ✅
+  "requiredAt": "2019-01-01T12:00:00.000Z", // requested time ✅
+  "availableEta": "2019-01-01T12:00:00.000Z",
+  "items": [
+    {
+      "uuid": "43g25532h235-34f23f34f34-f3432g23g32", // app uuid ✅🏛️
+      "posId": "123", // ITEM_ID ✅
+      "name": "Toasted Sourdough Bread & Eggs", // ✅
+      "quantity": 1, // ✅
+      "description": "Just ye old classic", // ✅
+      "unitPrice": "1100", // ✅
+      "tags": [
+        "tag"
+      ],
+      "type": "bundle",
+      "includedItems": [
+        {
+          "name": "Item name", // ✅
+          "posId": "123", // ITEM_ID (parent) ✅
+          "quantity": 1, // ✅
+          "unitPrice": "1000", // ITEM PRICE (parent) ✅
+          "options": [
+            {
+              "posId": "123", // GROUP_ID ✅
+              "name": "Option name", // ✅
+              "variants": [
+                {
+                  "posId": "123", // ITEM_ID ✅
+                  "name": "Variant name", // ITEM_DESCRIPTION ✅
+                  "price": "1000" // ITEM PRICE ✅
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "posId": "123", // ✅
+          "name": "Option name", // ✅
+          "variants": [
+            {
+              "posId": "123", // ✅
+              "name": "Variant name", // ✅
+              "price": "1000" // ✅
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "consumer": { // ⚠️ customer details
+    "name": "Tony", // ✅ 🚩eater.first_name=Test 🚩eater.last_name=Test 
+    "email": "user@test.com", // ✅ 
+    "phone": "+61415123456", // ✅
+    "address": {
+      "line1": "520 Bourke St", // ✅ 
+      "line2": "Level 1",
+      "city": "Melbourne", // ✅
+      "state": "VIC", // ✅
+      "postalCode": "3000",
+      "country": "AU" // ✅
+    }
+  },
+  "surcounts": [
+    {
+      "posId": "123",
+      "name": "Item name",
+      "description": "Item description",
+      "amount": 1000,
+      "type": "absolute",
+      "value": "1000"
+    }
+  ],
+  "taxes": [
+    {
+      "posId": "123",
+      "name": "Item name",
+      "amount": "1000",
+      "type": "absolute",
+      "taxType": "exclusive",
+      "value": "1000"
+    }
+  ],
+  "delivery": {
+    "status": "delivering",
+    "displayId": "string",
+    "phase": "Vehicle Dispatched",
+    "failedReason": "string",
+    "deliveryEta": "2019-01-01T12:00:00.000Z",
+    "driverName": "Jack Brabham", // ✅
+    "driverPhone": "12345678", // ✅
+    "trackingUrl": "https://delivery.app/tracking/12345"
+  },
+  "transactions": [
+    {
+      "id": "124",
+      "orderId": "112",
+      "reference": "23ad34-45623f-768",
+      "surcount": [
+        {
+          "posId": "123",
+          "name": "Item name",
+          "description": "Item description",
+          "amount": 1000,
+          "type": "absolute",
+          "value": "1000"
+        }
+      ],
+      "updatedAt": "2019-01-01T12:00:00.000Z",
+      "createdAt": "2019-01-01T12:00:00.000Z",
+      "uri": "https://sandbox.doshii.co/partner/v3/transactions/124",
+      "status": "requested",
+      "linkedTrxId": "123",
+      "posTerminalId": "123"
+    }
+  ],
+  "posCreatedAt": "2019-01-01T12:00:00.000Z",
+  "updatedAt": "2019-01-01T12:00:00.000Z",
+  "createdAt": "2019-01-01T12:00:00.000Z",
+  "version": "iwgjr2NJ014",
+  "uri": "https://sandbox.doshii.co/partner/v3/orders/1634",
+}

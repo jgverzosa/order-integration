@@ -1,0 +1,64 @@
+{
+    "configurations": [
+        {
+            "type": "aws-sam",
+            "request": "direct-invoke",
+            "name": "menu",
+            "sam": {
+                "skipNewImageCheck": true
+            },
+            "invokeTarget": {
+                "target": "code",
+                "lambdaHandler": "app.handler",
+                "projectRoot": ".",
+            },
+            "lambda": {
+                "runtime": "python3.9",
+                "payload": {
+                    "path": "./payloads/commonJson.json"
+                },
+                "environmentVariables": {
+                    "UBEREATS_API": "https://api.uber.com/v2/eats",
+                    "UBEREATS_LOGIN_API": "https://login.uber.com/oauth/v2/token",
+                    "UBEREATS_ACCESS_KEY": "X_NVHKyKSO4zPFE83GSZJtrUCNdTwUKv",
+                    "UBEREATS_SECRET_KEY": "RnX0bc3_WOdm6pNfK7fuf34gMVz2a_jeaKnSNqA4",
+                    "GOOGLE_PLACE_API": "https://maps.googleapis.com/maps/api/place/details/json",
+                    "GOOGLE_PLACE_ACCESS_KEY": "AIzaSyByCtAy8xc_lsuREURo_08gjBb6aaPAYqA"
+                },
+            },
+            "aws": {
+                "credentials": "profile:ditstg"
+            }
+        },
+        {
+            "type": "aws-sam",
+            "request": "direct-invoke",
+            "name": "order_notification",
+            "sam": {
+                "skipNewImageCheck": true
+            },
+            "invokeTarget": {
+                "target": "code",
+                "lambdaHandler": "app.handler",
+                "projectRoot": ".",
+            },
+            "lambda": {
+                "runtime": "python3.9",
+                "payload": {
+                    "path": "./payloads/orderNotificationEvent.json"
+                },
+                "environmentVariables": {
+                    "UBEREATS_API": "https://api.uber.com/v2/eats",
+                    "UBEREATS_LOGIN_API": "https://login.uber.com/oauth/v2/token",
+                    "UBEREATS_ACCESS_KEY": "X_NVHKyKSO4zPFE83GSZJtrUCNdTwUKv",
+                    "UBEREATS_SECRET_KEY": "RnX0bc3_WOdm6pNfK7fuf34gMVz2a_jeaKnSNqA4",
+                    "GOOGLE_PLACE_API": "https://maps.googleapis.com/maps/api/place/details/json",
+                    "GOOGLE_PLACE_ACCESS_KEY": "AIzaSyByCtAy8xc_lsuREURo_08gjBb6aaPAYqA"
+                },
+            },
+            "aws": {
+                "credentials": "profile:ditstg"
+            }
+        }
+    ]
+}

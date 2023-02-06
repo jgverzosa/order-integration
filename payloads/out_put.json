@@ -1,0 +1,1122 @@
+{
+    "menus": [
+        {
+            "id": "UE_MIGRATION",
+            "title": {
+                "translations": {
+                    "en": "Bob's classic menu"
+                }
+            },
+            "subtitle": {
+                "translations": {
+                    "en": "Bob's classic menu"
+                }
+            },
+            "service_availability": [
+                {
+                    "day_of_week": "monday",
+                    "time_periods": [
+                        {
+                            "start_time": "01:00",
+                            "end_time": "23:15"
+                        }
+                    ]
+                },
+                {
+                    "day_of_week": "tuesday",
+                    "time_periods": [
+                        {
+                            "start_time": "00:00",
+                            "end_time": "23:45"
+                        }
+                    ]
+                },
+                {
+                    "day_of_week": "wednesday",
+                    "time_periods": [
+                        {
+                            "start_time": "10:45",
+                            "end_time": "19:45"
+                        }
+                    ]
+                },
+                {
+                    "day_of_week": "thursday",
+                    "time_periods": [
+                        {
+                            "start_time": "10:45",
+                            "end_time": "19:45"
+                        }
+                    ]
+                },
+                {
+                    "day_of_week": "friday",
+                    "time_periods": [
+                        {
+                            "start_time": "17:00",
+                            "end_time": "00:00"
+                        }
+                    ]
+                },
+                {
+                    "day_of_week": "saturday",
+                    "time_periods": [
+                        {
+                            "start_time": "17:00",
+                            "end_time": "00:00"
+                        }
+                    ]
+                }
+            ],
+            "category_ids": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        }
+    ],
+    "categories": [
+        {
+            "id": "2",
+            "title": {
+                "translations": {
+                    "en": "Pizzas"
+                }
+            },
+            "entities": [
+                {
+                    "id": "GroupIdHawaiianPizza"
+                }
+            ]
+        },
+        {
+            "id": "1",
+            "title": {
+                "translations": {
+                    "en": "Pizza Deals of the month"
+                }
+            },
+            "entities": [
+                {
+                    "id": "DEAL01"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "title": {
+                "translations": {
+                    "en": "Pasta"
+                }
+            },
+            "entities": [
+                {
+                    "id": "PST01"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "title": {
+                "translations": {
+                    "en": "Drinks"
+                }
+            },
+            "entities": [
+                {
+                    "id": "DR01"
+                },
+                {
+                    "id": "DR02"
+                }
+            ]
+        }
+    ],
+    "items": [
+        {
+            "id": "ExtraTB01",
+            "external_data": "ExtraTB01",
+            "title": {
+                "translations": {
+                    "en": "Tomato Base"
+                }
+            },
+            "description": {
+                "translations": {
+                    "en": ""
+                }
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": [
+                    {
+                        "context_value": "RemoveExtra01",
+                        "price": 99,
+                        "context_type": "MODIFIER_GROUP"
+                    },
+                    {
+                        "context_value": "ExtraToppings0122",
+                        "price": 123,
+                        "context_type": "MODIFIER_GROUP"
+                    }
+                ]
+            },
+            "tax_info": {},
+            "nutritional_info": {},
+            "dish_info": {
+                "classifications": {
+                    "alcoholic_items": 0,
+                    "dietary_label_info": {
+                        "labels": null
+                    },
+                    "ingredients": null,
+                    "additives": null
+                }
+            },
+            "modifier_group_ids": {
+                "ids": [],
+                "overrides": []
+            },
+            "product_info": {
+                "product_traits": null,
+                "countries_of_origin": null
+            },
+            "bundled_items": null
+        },
+        {
+            "id": "ExtraP02",
+            "external_data": "ExtraP02",
+            "title": {
+                "translations": {
+                    "en": "Pineapple"
+                }
+            },
+            "description": {
+                "translations": {
+                    "en": ""
+                }
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": []
+            },
+            "tax_info": {},
+            "nutritional_info": {},
+            "dish_info": {
+                "classifications": {
+                    "alcoholic_items": 0,
+                    "dietary_label_info": {
+                        "labels": null
+                    },
+                    "ingredients": null,
+                    "additives": null
+                }
+            },
+            "modifier_group_ids": {
+                "ids": [],
+                "overrides": []
+            },
+            "product_info": {
+                "product_traits": null,
+                "countries_of_origin": null
+            },
+            "bundled_items": null
+        },
+        {
+            "id": "ExtraP03",
+            "external_data": "ExtraP03",
+            "title": {
+                "translations": {
+                    "en": "Ham"
+                }
+            },
+            "description": {
+                "translations": {
+                    "en": ""
+                }
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": []
+            },
+            "tax_info": {},
+            "nutritional_info": {},
+            "dish_info": {
+                "classifications": {
+                    "alcoholic_items": 0,
+                    "dietary_label_info": {
+                        "labels": null
+                    },
+                    "ingredients": null,
+                    "additives": null
+                }
+            },
+            "modifier_group_ids": {
+                "ids": [],
+                "overrides": []
+            },
+            "product_info": {
+                "product_traits": null,
+                "countries_of_origin": null
+            },
+            "bundled_items": null
+        },
+        {
+            "id": "LrgHawaiianPizza01",
+            "external_data": "LrgHawaiianPizza01",
+            "title": {
+                "translations": {
+                    "en": "Large Hawaiian Pizza"
+                }
+            },
+            "description": {
+                "translations": {
+                    "en": ""
+                }
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": []
+            },
+            "tax_info": {},
+            "nutritional_info": {},
+            "dish_info": {
+                "classifications": {
+                    "alcoholic_items": 0,
+                    "dietary_label_info": {
+                        "labels": null
+                    },
+                    "ingredients": null,
+                    "additives": null
+                }
+            },
+            "modifier_group_ids": {
+                "ids": [
+                    "Lp01ExtraToppings01"
+                ],
+                "overrides": []
+            },
+            "product_info": {
+                "product_traits": null,
+                "countries_of_origin": null
+            },
+            "bundled_items": null
+        },
+        {
+            "id": "LrgPepperoniPizza02",
+            "external_data": "LrgPepperoniPizza02",
+            "title": {
+                "translations": {
+                    "en": "Large Pepperoni Pizza"
+                }
+            },
+            "description": {
+                "translations": {
+                    "en": ""
+                }
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": []
+            },
+            "tax_info": {},
+            "nutritional_info": {},
+            "dish_info": {
+                "classifications": {
+                    "alcoholic_items": 0,
+                    "dietary_label_info": {
+                        "labels": null
+                    },
+                    "ingredients": null,
+                    "additives": null
+                }
+            },
+            "modifier_group_ids": {
+                "ids": [
+                    "Lp02ExtraToppings01"
+                ],
+                "overrides": []
+            },
+            "product_info": {
+                "product_traits": null,
+                "countries_of_origin": null
+            },
+            "bundled_items": null
+        },
+        {
+            "id": "DR10",
+            "external_data": "DR10",
+            "title": {
+                "translations": {
+                    "en": "1.25 L Coke"
+                }
+            },
+            "description": {
+                "translations": {
+                    "en": ""
+                }
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": []
+            },
+            "tax_info": {},
+            "nutritional_info": {},
+            "dish_info": {
+                "classifications": {
+                    "alcoholic_items": 0,
+                    "dietary_label_info": {
+                        "labels": null
+                    },
+                    "ingredients": null,
+                    "additives": null
+                }
+            },
+            "modifier_group_ids": {
+                "ids": [],
+                "overrides": []
+            },
+            "product_info": {
+                "product_traits": null,
+                "countries_of_origin": null
+            },
+            "bundled_items": null
+        },
+        {
+            "id": "DR11",
+            "external_data": "DR11",
+            "title": {
+                "translations": {
+                    "en": "1.25 L Sprite"
+                }
+            },
+            "description": {
+                "translations": {
+                    "en": ""
+                }
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": []
+            },
+            "tax_info": {},
+            "nutritional_info": {},
+            "dish_info": {
+                "classifications": {
+                    "alcoholic_items": 0,
+                    "dietary_label_info": {
+                        "labels": null
+                    },
+                    "ingredients": null,
+                    "additives": null
+                }
+            },
+            "modifier_group_ids": {
+                "ids": [],
+                "overrides": []
+            },
+            "product_info": {
+                "product_traits": null,
+                "countries_of_origin": null
+            },
+            "bundled_items": null
+        },
+        {
+            "id": "DEAL01",
+            "external_data": "DEAL01",
+            "title": {
+                "translations": {
+                    "en": "Pizza Deal"
+                }
+            },
+            "description": {
+                "translations": {
+                    "en": "Any Large Pizza + 1.25 Drink"
+                }
+            },
+            "image_url": "https://some.where.else/member/1653/4622.png",
+            "price_info": {
+                "price": 1200,
+                "overrides": []
+            },
+            "tax_info": {},
+            "nutritional_info": {},
+            "dish_info": {
+                "classifications": {
+                    "alcoholic_items": 0,
+                    "dietary_label_info": {
+                        "labels": []
+                    },
+                    "ingredients": null,
+                    "additives": null
+                }
+            },
+            "modifier_group_ids": {
+                "ids": [],
+                "overrides": []
+            },
+            "product_info": {
+                "product_traits": null,
+                "countries_of_origin": null
+            },
+            "bundled_items": null
+        },
+        {
+            "id": "SmlHawaiianPizza01",
+            "external_data": "SmlHawaiianPizza01",
+            "title": {
+                "translations": {
+                    "en": "Small Hawaiian Pizza"
+                }
+            },
+            "description": {
+                "translations": {
+                    "en": ""
+                }
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 1000,
+                "overrides": []
+            },
+            "tax_info": {},
+            "nutritional_info": {},
+            "dish_info": {
+                "classifications": {
+                    "alcoholic_items": 0,
+                    "dietary_label_info": {
+                        "labels": null
+                    },
+                    "ingredients": null,
+                    "additives": null
+                }
+            },
+            "modifier_group_ids": {
+                "ids": [
+                    "RemoveExtra01",
+                    "ExtraToppings01"
+                ],
+                "overrides": []
+            },
+            "product_info": {
+                "product_traits": null,
+                "countries_of_origin": null
+            },
+            "bundled_items": null
+        },
+        {
+            "id": "GroupIdHawaiianPizza",
+            "external_data": "GroupIdHawaiianPizza",
+            "title": {
+                "translations": {
+                    "en": "Hawaiian Pizza"
+                }
+            },
+            "description": {
+                "translations": {
+                    "en": "Tomato Base, Mozzarella, Ham, Pineapple"
+                }
+            },
+            "image_url": "https://some.where.else/member/1653/4622.png",
+            "price_info": {
+                "price": 1200,
+                "overrides": []
+            },
+            "tax_info": {},
+            "nutritional_info": {},
+            "dish_info": {
+                "classifications": {
+                    "alcoholic_items": 0,
+                    "dietary_label_info": {
+                        "labels": []
+                    },
+                    "ingredients": null,
+                    "additives": null
+                }
+            },
+            "modifier_group_ids": {
+                "ids": [],
+                "overrides": []
+            },
+            "product_info": {
+                "product_traits": null,
+                "countries_of_origin": null
+            },
+            "bundled_items": null
+        },
+        {
+            "id": "Option01",
+            "external_data": "Option01",
+            "title": {
+                "translations": {
+                    "en": "Fettuccine"
+                }
+            },
+            "description": {
+                "translations": {
+                    "en": ""
+                }
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": []
+            },
+            "tax_info": {},
+            "nutritional_info": {},
+            "dish_info": {
+                "classifications": {
+                    "alcoholic_items": 0,
+                    "dietary_label_info": {
+                        "labels": null
+                    },
+                    "ingredients": null,
+                    "additives": null
+                }
+            },
+            "modifier_group_ids": {
+                "ids": [],
+                "overrides": []
+            },
+            "product_info": {
+                "product_traits": null,
+                "countries_of_origin": null
+            },
+            "bundled_items": null
+        },
+        {
+            "id": "Option02",
+            "external_data": "Option02",
+            "title": {
+                "translations": {
+                    "en": "Penne"
+                }
+            },
+            "description": {
+                "translations": {
+                    "en": ""
+                }
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 0,
+                "overrides": []
+            },
+            "tax_info": {},
+            "nutritional_info": {},
+            "dish_info": {
+                "classifications": {
+                    "alcoholic_items": 0,
+                    "dietary_label_info": {
+                        "labels": null
+                    },
+                    "ingredients": null,
+                    "additives": null
+                }
+            },
+            "modifier_group_ids": {
+                "ids": [],
+                "overrides": []
+            },
+            "product_info": {
+                "product_traits": null,
+                "countries_of_origin": null
+            },
+            "bundled_items": null
+        },
+        {
+            "id": "SauceGroupOption01",
+            "external_data": "SauceGroupOption01",
+            "title": {
+                "translations": {
+                    "en": "Fettuccine"
+                }
+            },
+            "description": {
+                "translations": {
+                    "en": ""
+                }
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 33,
+                "overrides": []
+            },
+            "tax_info": {},
+            "nutritional_info": {},
+            "dish_info": {
+                "classifications": {
+                    "alcoholic_items": 0,
+                    "dietary_label_info": {
+                        "labels": null
+                    },
+                    "ingredients": null,
+                    "additives": null
+                }
+            },
+            "modifier_group_ids": {
+                "ids": [],
+                "overrides": []
+            },
+            "product_info": {
+                "product_traits": null,
+                "countries_of_origin": null
+            },
+            "bundled_items": null
+        },
+        {
+            "id": "SauceGroupOption02",
+            "external_data": "SauceGroupOption02",
+            "title": {
+                "translations": {
+                    "en": "Penne"
+                }
+            },
+            "description": {
+                "translations": {
+                    "en": ""
+                }
+            },
+            "image_url": null,
+            "price_info": {
+                "price": 212,
+                "overrides": []
+            },
+            "tax_info": {},
+            "nutritional_info": {},
+            "dish_info": {
+                "classifications": {
+                    "alcoholic_items": 0,
+                    "dietary_label_info": {
+                        "labels": null
+                    },
+                    "ingredients": null,
+                    "additives": null
+                }
+            },
+            "modifier_group_ids": {
+                "ids": [],
+                "overrides": []
+            },
+            "product_info": {
+                "product_traits": null,
+                "countries_of_origin": null
+            },
+            "bundled_items": null
+        },
+        {
+            "id": "PST01",
+            "external_data": "PST01",
+            "title": {
+                "translations": {
+                    "en": "Bolognese Pasta"
+                }
+            },
+            "description": {
+                "translations": {
+                    "en": "Homemade meaty beef in a rich tomato sauce."
+                }
+            },
+            "image_url": "https://some.where.else/member/1653/4622.png",
+            "price_info": {
+                "price": 1895,
+                "overrides": []
+            },
+            "tax_info": {},
+            "nutritional_info": {},
+            "dish_info": {
+                "classifications": {
+                    "alcoholic_items": 0,
+                    "dietary_label_info": {
+                        "labels": []
+                    },
+                    "ingredients": null,
+                    "additives": null
+                }
+            },
+            "modifier_group_ids": {
+                "ids": [
+                    "GroupOption01",
+                    "GroupOption02"
+                ],
+                "overrides": []
+            },
+            "product_info": {
+                "product_traits": null,
+                "countries_of_origin": null
+            },
+            "bundled_items": null
+        },
+        {
+            "id": "DR01",
+            "external_data": "DR01",
+            "title": {
+                "translations": {
+                    "en": "Can Coke Zero"
+                }
+            },
+            "description": {
+                "translations": {
+                    "en": ""
+                }
+            },
+            "image_url": "https://some.where.else/member/1653/4622.png",
+            "price_info": {
+                "price": 250,
+                "overrides": []
+            },
+            "tax_info": {},
+            "nutritional_info": {},
+            "dish_info": {
+                "classifications": {
+                    "alcoholic_items": 0,
+                    "dietary_label_info": {
+                        "labels": []
+                    },
+                    "ingredients": null,
+                    "additives": null
+                }
+            },
+            "modifier_group_ids": {
+                "ids": [],
+                "overrides": []
+            },
+            "product_info": {
+                "product_traits": null,
+                "countries_of_origin": null
+            },
+            "bundled_items": null
+        },
+        {
+            "id": "DR02",
+            "external_data": "DR02",
+            "title": {
+                "translations": {
+                    "en": "Can Fanta"
+                }
+            },
+            "description": {
+                "translations": {
+                    "en": ""
+                }
+            },
+            "image_url": "https://some.where.else/member/1653/4622.png",
+            "price_info": {
+                "price": 250,
+                "overrides": []
+            },
+            "tax_info": {},
+            "nutritional_info": {},
+            "dish_info": {
+                "classifications": {
+                    "alcoholic_items": 0,
+                    "dietary_label_info": {
+                        "labels": []
+                    },
+                    "ingredients": null,
+                    "additives": null
+                }
+            },
+            "modifier_group_ids": {
+                "ids": [],
+                "overrides": []
+            },
+            "product_info": {
+                "product_traits": null,
+                "countries_of_origin": null
+            },
+            "bundled_items": null
+        }
+    ],
+    "modifier_groups": [
+        {
+            "id": "Lp01ExtraToppings01",
+            "title": {
+                "translations": {
+                    "en": "Extra Toppings"
+                }
+            },
+            "quantity_info": {
+                "quantity": {
+                    "min_permitted": 0,
+                    "max_permitted": 1
+                },
+                "overrides": []
+            },
+            "modifier_options": [
+                {
+                    "id": "ExtraTB01",
+                    "type": "ITEM"
+                },
+                {
+                    "id": "ExtraP02",
+                    "type": "ITEM"
+                },
+                {
+                    "id": "ExtraP03",
+                    "type": "ITEM"
+                }
+            ],
+            "display_type": "collapsed"
+        },
+        {
+            "id": "Lp02ExtraToppings01",
+            "title": {
+                "translations": {
+                    "en": "Extra Toppings"
+                }
+            },
+            "quantity_info": {
+                "quantity": {
+                    "min_permitted": 0,
+                    "max_permitted": 1
+                },
+                "overrides": []
+            },
+            "modifier_options": [
+                {
+                    "id": "ExtraTB01",
+                    "type": "ITEM"
+                },
+                {
+                    "id": "ExtraP02",
+                    "type": "ITEM"
+                },
+                {
+                    "id": "ExtraP03",
+                    "type": "ITEM"
+                }
+            ],
+            "display_type": "collapsed"
+        },
+        {
+            "id": "DealOption01",
+            "title": {
+                "translations": {
+                    "en": "Choose your pizza"
+                }
+            },
+            "quantity_info": {
+                "quantity": {
+                    "min_permitted": 1,
+                    "max_permitted": 1
+                },
+                "overrides": []
+            },
+            "modifier_options": [
+                {
+                    "id": "LrgHawaiianPizza01",
+                    "type": "ITEM"
+                },
+                {
+                    "id": "LrgPepperoniPizza02",
+                    "type": "ITEM"
+                }
+            ],
+            "display_type": "collapsed"
+        },
+        {
+            "id": "DealOption02",
+            "title": {
+                "translations": {
+                    "en": "Choose your drink"
+                }
+            },
+            "quantity_info": {
+                "quantity": {
+                    "min_permitted": 1,
+                    "max_permitted": 1
+                },
+                "overrides": []
+            },
+            "modifier_options": [
+                {
+                    "id": "DR10",
+                    "type": "ITEM"
+                },
+                {
+                    "id": "DR11",
+                    "type": "ITEM"
+                }
+            ],
+            "display_type": "collapsed"
+        },
+        {
+            "id": "RemoveExtra01",
+            "title": {
+                "translations": {
+                    "en": "Remove Current Toppings"
+                }
+            },
+            "quantity_info": {
+                "quantity": {
+                    "min_permitted": 0,
+                    "max_permitted": 1
+                },
+                "overrides": []
+            },
+            "modifier_options": [
+                {
+                    "id": "ExtraTB01",
+                    "type": "ITEM"
+                },
+                {
+                    "id": "ExtraP02",
+                    "type": "ITEM"
+                },
+                {
+                    "id": "ExtraP03",
+                    "type": "ITEM"
+                }
+            ],
+            "display_type": "collapsed"
+        },
+        {
+            "id": "ExtraToppings01",
+            "title": {
+                "translations": {
+                    "en": "Extra Toppings"
+                }
+            },
+            "quantity_info": {
+                "quantity": {
+                    "min_permitted": 0,
+                    "max_permitted": 1
+                },
+                "overrides": []
+            },
+            "modifier_options": [
+                {
+                    "id": "ExtraTB01",
+                    "type": "ITEM"
+                },
+                {
+                    "id": "ExtraP02",
+                    "type": "ITEM"
+                },
+                {
+                    "id": "ExtraP03",
+                    "type": "ITEM"
+                }
+            ],
+            "display_type": "collapsed"
+        },
+        {
+            "id": "ExtraToppings0122",
+            "title": {
+                "translations": {
+                    "en": "Extra Toppings"
+                }
+            },
+            "quantity_info": {
+                "quantity": {
+                    "min_permitted": 0,
+                    "max_permitted": 1
+                },
+                "overrides": []
+            },
+            "modifier_options": [
+                {
+                    "id": "ExtraTB01",
+                    "type": "ITEM"
+                },
+                {
+                    "id": "ExtraP02",
+                    "type": "ITEM"
+                },
+                {
+                    "id": "ExtraP03",
+                    "type": "ITEM"
+                }
+            ],
+            "display_type": "collapsed"
+        },
+        {
+            "id": "GroupIdHawaiianPizza",
+            "title": {
+                "translations": {
+                    "en": "Hawaiian Pizza"
+                }
+            },
+            "quantity_info": {
+                "quantity": {
+                    "min_permitted": null,
+                    "max_permitted": null
+                },
+                "overrides": []
+            },
+            "modifier_options": [
+                {
+                    "id": "SmlHawaiianPizza01",
+                    "type": "ITEM"
+                },
+                {
+                    "id": "LrgHawaiianPizza01",
+                    "type": "ITEM"
+                }
+            ],
+            "display_type": "collapsed"
+        },
+        {
+            "id": "GroupOption01",
+            "title": {
+                "translations": {
+                    "en": "Pasta Noodle"
+                }
+            },
+            "quantity_info": {
+                "quantity": {
+                    "min_permitted": 0,
+                    "max_permitted": 1
+                },
+                "overrides": []
+            },
+            "modifier_options": [
+                {
+                    "id": "Option01",
+                    "type": "ITEM"
+                },
+                {
+                    "id": "Option02",
+                    "type": "ITEM"
+                }
+            ],
+            "display_type": "collapsed"
+        },
+        {
+            "id": "GroupOption02",
+            "title": {
+                "translations": {
+                    "en": "Sauce"
+                }
+            },
+            "quantity_info": {
+                "quantity": {
+                    "min_permitted": 0,
+                    "max_permitted": 1
+                },
+                "overrides": []
+            },
+            "modifier_options": [
+                {
+                    "id": "SauceGroupOption01",
+                    "type": "ITEM"
+                },
+                {
+                    "id": "SauceGroupOption02",
+                    "type": "ITEM"
+                }
+            ],
+            "display_type": "collapsed"
+        }
+    ],
+    "display_options": {}
+}

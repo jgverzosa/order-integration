@@ -15,6 +15,9 @@ class UberEatsService:
         self.response = {}
 
     def generate_uber_eats_token(self, access_key, secret_key):
+
+        #add redis call uber_key_cache (string)
+
         login_url = os.environ.get('UBEREATS_LOGIN_API')
         data = {
             'client_id': access_key,
@@ -51,6 +54,21 @@ class UberEatsService:
             self.response['body'] = response.text
             logger.warning(self.response)
             return False
-        pass
 
+    def get_order(self, order_id):
+        endpoint = f"{self.config.get('ubereats_url')}/order/{order_id}"
+        token = self.generate_uber_eats_token(
+                self.config.get('access_key'), 
+                self.config.get('secret_key'))
+        self.headersAuth = {
+            'Content-type': 'application/json', 'Accept': 'text/plain',
+            'Authorization': f"Bearer {token.get('access_token')}",
+        }
+        response = requests.request("GET", endpoint, headers=self.headersAuth)
+        if 200 <= response.status_code < 300:
+            logger.info(self.response)
+            return response.json()
+        else:
+            logger.warning(self.response)
+            return False
 

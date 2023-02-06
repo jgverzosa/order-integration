@@ -1,0 +1,296 @@
+{
+  "id": "1634", // uuid ✅🏛️
+  "posRef": "pos-12345678", // ❌
+  "externalOrderRef": "AQN-1234",
+  "deliveryOrderId": "XGH-4528-JTW",
+  "locationId": "Xuy8K3a0", // integration id ✅🏛️
+  "checkinId": "3", // ❌
+  "manuallyProcessed": false, // ❌
+  "mealPhase": "ordered", // ❌
+  "status": "accepted", // ✅
+  "type": "pickup", // ✅
+  "notes": "Deliver to back door", // order notes ✅
+  "revenueCentre": "123", // ❌
+  "requiredAt": "2019-01-01T12:00:00.000Z", // requested time ✅
+  "availableEta": "2019-01-01T12:00:00.000Z",
+  "items": [
+    {
+      "uuid": "43g25532h235-34f23f34f34-f3432g23g32", // app uuid ✅🏛️
+      "posId": "123", // ITEM_ID ✅
+      "name": "Toasted Sourdough Bread & Eggs", // ✅
+      "quantity": 1, // ✅
+      "description": "Just ye old classic", // ✅
+      "unitPrice": "1100", // ✅
+      "totalBeforeSurcounts": "1100", // ❌
+      "totalAfterSurcounts": "1100", // ❌
+      "lastAction": { // ❌
+        "logId": "f52e2b12-9b13-4113-bb49-3cfacad02545",
+        "employeeName": "Fred Bloggs",
+        "employeePosRef": "432324tgr",
+        "deviceRef": "213-iPad",
+        "deviceName": "Dining Room iPad 1",
+        "area": "Dining Room",
+        "appId": "12",
+        "appName": "Fred's Cool Ordering App",
+        "audit": "accepted => complete",
+        "action": [
+          "Item ID (bd9e565a-affe-4f7d-9dc6-728151647af0) item_created",
+          "order_updated"
+        ],
+        "performedAt": "2019-01-01T12:00:00.000Z"
+      }, // ❌
+      "tags": [
+        "tag"
+      ],
+      "type": "bundle",
+      "includedItems": [
+        {
+          "name": "Item name", // ✅
+          "posId": "123", // ITEM_ID (parent) ✅
+          "quantity": 1, // ✅
+          "unitPrice": "1000", // ITEM PRICE (parent) ✅
+          "options": [
+            {
+              "posId": "123", // GROUP_ID ✅
+              "name": "Option name", // ✅
+              "variants": [
+                {
+                  "posId": "123", // ITEM_ID ✅
+                  "name": "Variant name", // ITEM_DESCRIPTION ✅
+                  "price": "1000" // ITEM PRICE ✅
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "surcounts": [ // ❌
+        {
+          "posId": "123",
+          "name": "Item name",
+          "description": "Item description",
+          "amount": 1000,
+          "type": "absolute",
+          "value": "1000"
+        }
+      ], // ❌
+      "taxes": [ // ❌
+        {
+          "posId": "123",
+          "name": "Item name",
+          "amount": "1000",
+          "type": "absolute",
+          "taxType": "exclusive",
+          "value": "1000"
+        }
+      ], // ❌
+      "options": [
+        {
+          "posId": "123", // ✅
+          "name": "Option name", // ✅
+          "variants": [
+            {
+              "posId": "123", // ✅
+              "name": "Variant name", // ✅
+              "price": "1000" // ✅
+            }
+          ]
+        }
+      ],
+      "rewardRef": "543-765-987" // ❌
+    }
+  ],
+  "unapprovedItems": [ // ❌
+    {
+      "uuid": "43g25532h235-f34f23f34f34-f3432g23g32",
+      "posId": "123",
+      "status": "pending",
+      "name": "Toasted Sourdough Bread & Eggs",
+      "quantity": 1,
+      "description": "Just ye old classic",
+      "unitPrice": "1100",
+      "totalBeforeSurcounts": "1100",
+      "totalAfterSurcounts": "1100",
+      "tags": [
+        "tag"
+      ],
+      "type": "bundle",
+      "includedItems": [
+        {
+          "name": "Item name",
+          "posId": "123",
+          "quantity": 1,
+          "unitPrice": "1000",
+          "options": [
+            {
+              "posId": "123",
+              "name": "Option name",
+              "variants": [
+                {
+                  "posId": "123",
+                  "name": "Variant name",
+                  "price": "1000"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "surcounts": [
+        {
+          "posId": "123",
+          "name": "Item name",
+          "description": "Item description",
+          "amount": 1000,
+          "type": "absolute",
+          "value": "1000"
+        }
+      ],
+      "taxes": [
+        {
+          "posId": "123",
+          "name": "Item name",
+          "amount": "1000",
+          "type": "absolute",
+          "taxType": "exclusive",
+          "value": "1000"
+        }
+      ],
+      "options": [
+        {
+          "posId": "123",
+          "name": "Option name",
+          "variants": [
+            {
+              "posId": "123",
+              "name": "Variant name",
+              "price": "1000"
+            }
+          ]
+        }
+      ]
+    }
+  ], // ❌
+  "consumer": { // ⚠️ customer details
+    "name": "Tony", // ✅
+    "email": "user@test.com", // ✅ 
+    "phone": "+61415123456", // ✅
+    "marketingOptIn": true, // ❌
+    "address": {
+      "line1": "520 Bourke St", // ✅ 
+      "line2": "Level 1",
+      "city": "Melbourne", // ✅
+      "state": "VIC", // ✅
+      "postalCode": "3000",
+      "country": "AU", // ✅
+      "notes": "string" // ❌
+    }
+  },
+  "surcounts": [
+    {
+      "posId": "123",
+      "name": "Item name",
+      "description": "Item description",
+      "amount": 1000,
+      "type": "absolute",
+      "value": "1000"
+    }
+  ],
+  "taxes": [
+    {
+      "posId": "123",
+      "name": "Item name",
+      "amount": "1000",
+      "type": "absolute",
+      "taxType": "exclusive",
+      "value": "1000"
+    }
+  ],
+  "checkin": { // ❌
+    "id": "123",
+    "status": "accepted",
+    "ref": "813234",
+    "tableNames": [
+      "Table 1"
+    ],
+    "covers": 4,
+    "bookingId": "765",
+    "completedAt": null,
+    "consumer": { // ⚠️ customer details
+      "name": "Tony", // ✅
+      "email": "user@test.com", // ✅ 
+      "phone": "+61415123456", // ✅
+      "marketingOptIn": true,
+      "address": {
+        "line1": "520 Bourke St", // ✅ 
+        "line2": "Level 1",
+        "city": "Melbourne", // ✅
+        "state": "VIC", // ✅
+        "postalCode": "3000",
+        "country": "AU", // ✅
+        "notes": "string"
+      }
+    }, // ❌
+    "rejectionCode": "CH01",
+    "rejectionReason": "Table in use",
+    "posTerminalId": "Wsd22dXw2",
+    "updatedAt": "2019-01-01T12:00:00.000Z",
+    "createdAt": "2019-01-01T12:00:00.000Z",
+    "uri": "https://sandbox.doshii.co/partner/v3/checkins/123"
+  },
+  "rejectionCode": "O1", // ❌
+  "delivery": {
+    "status": "delivering",
+    "displayId": "string",
+    "phase": "Vehicle Dispatched",
+    "failedReason": "string",
+    "deliveryEta": "2019-01-01T12:00:00.000Z",
+    "driverName": "Jack Brabham", // ✅
+    "driverPhone": "12345678", // ✅
+    "trackingUrl": "https://delivery.app/tracking/12345"
+  },
+  "transactions": [
+    {
+      "id": "124",
+      "orderId": "112",
+      "reference": "23ad34-45623f-768",
+      "invoice": "INV2245", // ❌
+      "method": "mastercard", // ❌
+      "amount": "1000", // ❌
+      "tip": 0, // ❌
+      "trn": "100412786589", // ❌
+      "acceptLess": false, // ❌
+      "partnerInitiated": true, // ❌
+      "prepaid": true, // ❌
+      "rejectionCode": "P1", // ❌
+      "rejectionReason": "Insufficient funds", // ❌
+      "version": "AJHBFjAKJFE3fnj33njj", // ❌
+      "surcount": [
+        {
+          "posId": "123",
+          "name": "Item name",
+          "description": "Item description",
+          "amount": 1000,
+          "type": "absolute",
+          "value": "1000"
+        }
+      ],
+      "updatedAt": "2019-01-01T12:00:00.000Z",
+      "createdAt": "2019-01-01T12:00:00.000Z",
+      "uri": "https://sandbox.doshii.co/partner/v3/transactions/124",
+      "status": "requested",
+      "linkedTrxId": "123",
+      "posTerminalId": "123"
+    }
+  ],
+  "rejectionReason": "string", // ❌
+  "preorderBookingId": "string", // ❌
+  "posTerminalId": "Wsd22dXw2", // ❌
+  "posDisplayId": "123-456", // ❌
+  "posCreatedAt": "2019-01-01T12:00:00.000Z",
+  "updatedAt": "2019-01-01T12:00:00.000Z",
+  "createdAt": "2019-01-01T12:00:00.000Z",
+  "version": "iwgjr2NJ014",
+  "uri": "https://sandbox.doshii.co/partner/v3/orders/1634",
+  "transactionsUri": "https://sandbox.doshii.co/partner/v3/orders/1634/transactions"  // ❌
+}

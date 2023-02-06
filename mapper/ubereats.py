@@ -1,5 +1,3 @@
-import json
-from time import time
 from aws_lambda_powertools import Logger
 
 from entities.ubereats_menu import UberEatsMenuSchema
@@ -69,6 +67,7 @@ class UberEatsMapper:
             self.add_modifier(modifier)
             # Append the modifier_group_ids of the part item
             parent = next((item for item in self.uber_eats_menu_format['items'] if item['id'] == parent_item.get('posId')), None)
+            main_item['external_data'] = 'bundle'
             if parent:
                 parent['modifier_group_ids']['ids'].append(product.get('posId'))
             if main_item:
@@ -80,9 +79,10 @@ class UberEatsMapper:
             for option in product.get('options'):
                 variant_ids = self.map_option_variants(option)
                 modifier = self.get_modifier(option)
+                modifier['id'] = f"option:{modifier['id']}"
                 modifier['modifier_options'] = self.get_modifier_options(variant_ids)
                 self.add_modifier(modifier)
-                modifier_ids.append(option['posId'])
+                modifier_ids.append(modifier['id'])
             main_item['modifier_group_ids']['ids'].extend(modifier_ids)
 
     def map_option_variants(self, option):
@@ -188,7 +188,7 @@ class UberEatsMapper:
     def get_item(self, product):
         item = {
             'id': str(product.get('posId')),
-            'external_data': str(product.get('posId')),
+            'external_data': 'single',
             'title': self.get_translations(product.get('name')),
             'description': self.get_translations(product.get('description')),
             'image_url': product.get('imageUri'),
